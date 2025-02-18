@@ -1,4 +1,4 @@
 # Bitstance
 
-A website for Bitstance the band.
+A website for Bitstance's generative live stream, Bitstance Radio.
 

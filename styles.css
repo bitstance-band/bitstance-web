@@ -3,35 +3,30 @@ body {
     margin: 0;
     background-color: #121212;
     color: #e0e0e0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.6;
-}
-
-.container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 1rem;
     text-align: center;
 }
 
 h1 {
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 300;
-    font-size: 2.5rem;
+    font-weight: 600;
+    font-size: 300%;
     margin: 0 0 1rem 0;
     color: #ffffff;
     letter-spacing: -0.05rem;
 }
 
-.tagline {
-    font-size: 1rem;
-    color: #b0b0b0;
-    margin: 0 0 1.5rem 0;
+img.poster {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 audio {
     width: 100%;
-    max-width: 100%;
+    max-width: 500px;
     margin: 1rem 0;
     background-color: #333;
     border-radius: 8px;
@@ -43,38 +38,54 @@ audio:hover {
     transition: background-color 0.3s ease;
 }
 
-.loading-message {
-    display: none; /* Hidden by default */
+.instructions {
     font-size: 0.9rem;
-    color: #b0b0b0;
-    margin: 0.5rem 0;
+    margin: 0 0 1.5rem 0;
 }
 
-.audio-description {
-    font-size: 0.9rem;
-    color: #b0b0b0;
-    margin: 0.5rem 0 1.5rem 0;
-}
-
-/* Styles for the stream links section */
 .stream-links {
     margin: 1.5rem 0;
-    font-size: 0.9rem;
-    color: #b0b0b0;
 }
 
 .stream-links a {
     color: #1db954; /* Spotify green */
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 102%;
 }
 
 .stream-links a:hover {
-    color: #1ed760; /* Lighter Spotify green */
+    color: #1ed760;
 }
 
 .stream-links a[href*="bandcamp"] {
     color: #629aa9; /* Bandcamp blue */
 }
 
-.stream-links a[href*="bandcamp"]:hover
+.stream-links a[href*="bandcamp"]:hover {
+    color: #7ab5c4;
+}
+
+.stream-links a[href*="apple"] {
+    color: #fa324a; /* Apple Music red */
+}
+
+.stream-links a[href*="apple"]:hover {
+    color: #ff4d63;
+}
+
+.stream-links a[href*="youtube"] {
+    color: #ff0000; /* YouTube red */
+}
+
+.stream-links a[href*="youtube"]:hover {
+    color: #ff3333;
+}
+
+.stream-links a[href*="tidal"] {
+    color: #00ffff; /* Tidal cyan */
+}
+
+.stream-links a[href*="tidal"]:hover {
+    color: #33ffff;
+}
